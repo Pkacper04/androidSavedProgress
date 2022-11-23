@@ -2,23 +2,39 @@ package com.example.toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Application;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button firstButton;
+    Button secondButton;
+
+    Context context;
+    Toast toast1;
+    Toast toast2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+        firstButton = findViewById(R.id.FirstButton);
+        secondButton = findViewById(R.id.SecondButton);
+        context = getApplicationContext();
+        toast1 = Toast.makeText(context,R.string.toast1_Text,Toast.LENGTH_SHORT);
+        toast2 = Toast.makeText(context,R.string.toast2_Text,Toast.LENGTH_SHORT);
 
+        firstButton.setOnClickListener(view ->{
+                toast1.show();
+        });
 
-    protected void CreateToast(View myView)
-    {
-        Button button = findViewById(myView.getId());
-        button.setText("set text");
+        secondButton.setOnClickListener(view -> {
+            toast2.show();
+        });
     }
 }
