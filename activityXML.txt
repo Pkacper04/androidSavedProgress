@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/HeaderText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:text="@string/header_text"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/FirstButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HeaderText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+
+        android:backgroundTint="#2196F3"
+
+        android:text="@string/button1_text"
+        android:onClick="CreateToast"
+        />
+
+    <Button
+        android:id="@+id/SecondButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FirstButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="#2196F3"
+
+        android:text="@string/button2_text"
+        android:onClick="CreateToast"
+        />
+
+</RelativeLayout>
