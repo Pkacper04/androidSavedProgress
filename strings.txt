@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginAppAS</string>
+    <string name="header_text">Rejestruj konto</string>
+    <string name="email_text">Podaj e-mail:</string>
+    <string name = "email_input_text">email</string>
+    <string name = "first_password_text">Podaj hasło:</string>
+    <string name = "second_password_text">Powtórz hasło:</string>
+    <string name = "button_text">Zatwierdź</string>
+    <string name = "info_start_text">Autor: Kacper Potaczała</string>
+</resources>

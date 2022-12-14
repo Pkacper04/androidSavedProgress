@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/HeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_text"
+        android:background="#008080"
+        android:textColor="#ffffff"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/EmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email_text"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/EmailEditField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:hint="@string/email_input_text"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/PasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_password_text"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/PasswordEditField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/PasswordRepeatText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/second_password_text"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/PasswordRepeatEditField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button_text"
+        android:backgroundTint="#aaaaaa"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/InfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/info_start_text"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+</LinearLayout>
