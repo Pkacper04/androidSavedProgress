@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Toast</string>
-    <string name="header_text">Jestem aktywny</string>
-    <string name="button1_text">Przycisk 1</string>
-    <string name="button2_text">Przycisk 2</string>
-    <string name="toast1_Text">Kliknales przycisk 1</string>
-    <string name="toast2_Text">Kliknales przycisk 2</string>
-</resources>
