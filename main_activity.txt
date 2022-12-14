@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:textColor="#000000"
-        android:hint="@string/email_input_text"
+        android:hint="@string/email_hint"
         android:minHeight="48dp"/>
 
     <TextView
@@ -46,7 +46,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:textColor="#000000"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        android:hint="@string/password_hint"
+        />
 
     <TextView
         android:id="@+id/PasswordRepeatText"
@@ -62,7 +64,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:textColor="#000000"
-        android:minHeight="48dp"/>
+        android:minHeight="48dp"
+        android:hint="@string/password_hint"
+        />
 
     <Button
         android:id="@+id/SubmitButton"
@@ -70,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/button_text"
-        android:backgroundTint="#aaaaaa"
+        android:backgroundTint="#dddddd"
         android:textColor="#000000"
         android:textSize="20sp"
         />
@@ -79,6 +83,7 @@
         android:id="@+id/InfoText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="@string/info_start_text"
         android:textSize="20sp"
